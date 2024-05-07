@@ -1,0 +1,15 @@
+meta {
+  name: Logout
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8000/api/auth/logout
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTUwMDU5NTcsImlhdCI6MTcxNTAwNTA1NywibmJmIjoxNzE1MDA1MDU3LCJzdWIiOiI1N2NjYTEzYi0zY2NmLTQ3Y2UtOGY4OC03NDlhMTAwNDZmODAifQ.HrBvBd28Gl3EI7dzabHK8DkTId3V08paSJmrdo1UqEE7UdEs5tkgfIsqHV6B14GU6fhcaiovypQOUu2lYtS0DhMA2zucDcuFooZD42U9Xdl2wm40YhbxXa8pDoOf6dMKB5HM22QsbPJ7VC-r-97e1K8CNNvXT7jCka9B7ITjmmRm8112TCoqeUu8bamh1tx55sxvJgg1cXlN0ocrsU-aymvMhTs_yR7dgkjdeGNm2hD855MI-bU9ybJWZ3mAVHXajx0UzzXaRFNhsHNm9ptROyj3OP3nJ6L2xfJUCzA7KRMZxBUm4zmHznkNShyvxe3PRH2Oe2LPMriuC4Jst3DuNw
+}

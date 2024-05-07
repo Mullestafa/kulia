@@ -1,0 +1,19 @@
+meta {
+  name: LogIn
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8000/api/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "kiwoh56035@deligy.com",
+    "password": "pass1234"
+  }
+  
+}

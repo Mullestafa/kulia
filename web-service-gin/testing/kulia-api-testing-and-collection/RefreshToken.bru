@@ -1,0 +1,23 @@
+meta {
+  name: RefreshToken
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8000/api/auth/refresh
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTUwMDYzNDMsImlhdCI6MTcxNTAwNTQ0MywibmJmIjoxNzE1MDA1NDQzLCJzdWIiOiI1N2NjYTEzYi0zY2NmLTQ3Y2UtOGY4OC03NDlhMTAwNDZmODAifQ.Ic49_LBQ0_IIHR0e2EIKKsDuryhrLRrEtmeBbWpOi5l2xp5Li-dP0sSWHWFM0aoLsplFfwzfWTocK5eltFFuXzd8EdxmWCShpGg-_YSRUzZqMhPm3CawXLl547MsHWT--pm9TaPGdZKQdsZNHrOYMxtkSA2QWMNX4YY5fa8ZHa2qwuF9jSet1NL64ADyZLlN8Nmo4CqpocnAfBy6e2Djqg2vNIxdVdCyoeAyy-G_d4p_jycgOpucMyIa8fVV0yDh4XaEQMzv1zdxuHIzJtKiVAMGERoVsSfrJ5mk1lq2nbFlxEZPqFzW4hJZGwYEKdCSNNJWNkzsYPPqfB3IsPnQ5g
+}
+
+body:json {
+  {
+    "email": "Firston",
+    "password": "pass1234"
+  }
+  
+}

@@ -1,0 +1,21 @@
+meta {
+  name: SignUp
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/api/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "third",
+    "email": "kiwoh56035@deligy.com",
+    "password": "pass1234",
+    "passwordConfirm": "pass1234"
+  }
+  
+}
